@@ -1,7 +1,7 @@
 # Used Car Price Prediction
 
 Machine learning project developed for the Business Analytics and Data Science course (University of St. Gallen).  
-Goal: predict used car prices in a private Kaggle-style class competition.
+Goal: predict used car prices in a private Kaggle class competition.
 
 ## Result
 
