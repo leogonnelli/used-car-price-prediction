@@ -1,6 +1,8 @@
 # Ignore data files and model outputs
 *.csv
 *.joblib
+!results/*.csv
+!results/*.png
 
 # Ignore notebook checkpoints and Python cache
 .ipynb_checkpoints/

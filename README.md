@@ -6,7 +6,7 @@ Goal: predict used car prices in a private Kaggle-style class competition.
 ## Result
 
 - Final ranking: 3rd out of 34 participants
-- Main models evaluated: Linear Regression, Random Forest, XGBoost
+- Main models evaluated: Linear Regression, Random Forest, XGBoost, LightGBM
 - Final submission approach: weighted blending of top models
 
 ## Project Structure
@@ -16,7 +16,7 @@ Goal: predict used car prices in a private Kaggle-style class competition.
 ├── data/                 # Train/test and processed datasets
 ├── Notebooks/            # End-to-end modeling notebooks
 ├── Scripts/              # Reusable preprocessing utilities
-├── Results/              # Competition submission files
+├── results/              # Competition submissions and model outputs
 ├── requirements.txt
 ├── .gitignore
 └── README.md
@@ -46,6 +46,7 @@ Goal: predict used car prices in a private Kaggle-style class competition.
 - Linear Regression: RMSE 3621.28, R^2 0.844
 - Random Forest: RMSE 1995.52, R^2 0.953
 - XGBoost: RMSE 2024.35, R^2 0.951
+- LightGBM: RMSE 1892.37
 
 
 
