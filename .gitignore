@@ -5,6 +5,7 @@
 # Ignore notebook checkpoints and Python cache
 .ipynb_checkpoints/
 __pycache__/
+.DS_Store
 
 # Optional: Ignore virtual envs
 .env/

@@ -1,64 +1,51 @@
-# 🚗 Used Car Price Prediction
+# Used Car Price Prediction
 
-A machine learning project to predict the price of used cars based on structured datasets. Multiple models were trained and compared, with a final blended model selected for submission.
+Machine learning project developed for the Business Analytics and Data Science course (University of St. Gallen).  
+Goal: predict used car prices in a private Kaggle-style class competition.
 
-This is a machine learning project that I had to do in the context of a "Business Analytics and Data Science" course. The goal of this project was to train 3 different models on a train.csv dataset, tune one of them and submit the final model on a private Kaggle competition (class competition) to see who's model would perform the best on unseen data (test.csv, on which the target - price - is not specified). 
+## Result
 
-The fine-tuned Random Forest Regressor was retained for the Kaggle submission.
+- Final ranking: 3rd out of 34 participants
+- Main models evaluated: Linear Regression, Random Forest, XGBoost
+- Final submission approach: weighted blending of top models
 
----
+## Project Structure
 
-## 📂 Project Structure
-
-├── data/                  # Cleaned and raw data (ignored from GitHub) \
-├── Notebooks/             # Jupyter notebooks for each step \
-├── Results/                # Trained models (.joblib files) \
-├── Scripts/                   # Python scripts (e.g., processing.py) \
-├── requirements.txt       # List of required Python packages \
-├── README.md              # Project overview 
-
----
-
-## 📊 Models Used
-- Linear Regression
-- Random Forest
-- XGBoost
-- Blender (ensemble of above)
-
----
-
-## 🧠 Technologies
-- Python
-- pandas, NumPy, scikit-learn
-- XGBoost, joblib
-- Jupyter
-
----
-
-## 🚀 How to Run
-
-1. Install dependencies:
-```bash
-pip install -r requirements.txt
-
-2. Run the submission.ipynb notebook
-
-3. Results are stored in the submission.csv file
+```text
+.
+├── data/                 # Train/test and processed datasets
+├── Notebooks/            # End-to-end modeling notebooks
+├── Scripts/              # Reusable preprocessing utilities
+├── Results/              # Competition submission files
+├── requirements.txt
+├── .gitignore
+└── README.md
 ```
 
-## ✔ Conclusion
+## How To Run
 
-The LR returned:
-- RMSE = $3621.28
-- R^2 Score = 0.844
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/leogonnelli/used-car-price-prediction.git
+   cd used-car-price-prediction
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Open notebooks and execute in order:
+   - `Notebooks/01_exploration.ipynb`
+   - `Notebooks/02_linear_regression.ipynb`
+   - `Notebooks/03_random_forest.ipynb`
+   - `Notebooks/04_XGBoost.ipynb`
+   - `Notebooks/06_blendering.ipynb`
+   - `Notebooks/05_submission.ipynb`
 
-The Random Forest Regressor returned:
-- RMSE = $1995.52
-- R^2 Score = 0.953
+## Model Performance (Validation)
 
-The XGBoost Regressor returned:
-- RMSE = $2024.35
-- R^2 Score = 0.951
+- Linear Regression: RMSE 3621.28, R^2 0.844
+- Random Forest: RMSE 1995.52, R^2 0.953
+- XGBoost: RMSE 2024.35, R^2 0.951
 
 
 
