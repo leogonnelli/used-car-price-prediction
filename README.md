@@ -33,13 +33,7 @@ Goal: predict used car prices in a private Kaggle class competition.
    ```bash
    pip install -r requirements.txt
    ```
-3. Open notebooks and execute in order:
-   - `Notebooks/01_exploration.ipynb`
-   - `Notebooks/02_linear_regression.ipynb`
-   - `Notebooks/03_random_forest.ipynb`
-   - `Notebooks/04_XGBoost.ipynb`
-   - `Notebooks/06_blendering.ipynb`
-   - `Notebooks/05_submission.ipynb`
+3. Open notebooks and execute the model you want
 
 ## Model Performance (Validation)
 
