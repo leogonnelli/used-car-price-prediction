@@ -7,7 +7,7 @@ Goal: predict used car prices in a private Kaggle class competition.
 
 - Final ranking: 3rd out of 34 participants
 - Main models evaluated: Linear Regression, Random Forest, XGBoost, LightGBM
-- Final submission approach: weighted blending of top models
+- Final submission approach: LightGBM
 
 ## Project Structure
 
